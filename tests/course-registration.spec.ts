@@ -7,7 +7,7 @@ test.describe('Course registration', () => {
         const coursesList = page.getByRole('combobox', { name: 'Courses '});
 
         await expect(coursesList).toBeVisible();
+        await expect(coursesList.getByRole("option", { name: "Select the course you'd like to register for..." })).toBeDisabled();
         await expect(coursesList.getByRole("option", { name: "Accessibility 101" })).toBeEnabled();
-
     });
 });
