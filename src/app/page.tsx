@@ -9,7 +9,7 @@ export default function Home() {
         <label htmlFor="courses">Courses</label>
         <select id="courses">
           <option disabled>Select the course you'd like to register for...</option>
-          <option>Accessibility 101</option>
+          <option data-course-id="28a7f254-5e2d-46ac-b512-83b6c8ba4b2a">Accessibility 101</option>
         </select>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
