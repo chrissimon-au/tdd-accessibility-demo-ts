@@ -6,7 +6,7 @@ test('has title', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/University Registration/);
-  await expect(page.getByRole('heading', { name: 'University Registration' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'University Registration' })).toBeVisible();
 });
 
 test('No Accessibility Issues', async ({ page }) => {
