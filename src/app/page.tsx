@@ -8,6 +8,7 @@ export default function Home() {
         <h1>University Registration</h1>
         <label htmlFor="courses">Courses</label>
         <select id="courses">
+          <option disabled>Select the course you'd like to register for...</option>
           <option>Accessibility 101</option>
         </select>
       </main>
